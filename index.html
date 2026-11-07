@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viés e Transparência em IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>DILEMA DIGITAL</h1>
+    <p>A influência da IA na disseminação de informações falsas e a falta de verificação das fontes</p>
+  </header>
+
+  <main>
+
+
+
+    <section>
+      <h2>Pergunta</h2>
+      <p>você costuma verificar se uma informação gerada por IA é verdadeira antes de compartilha-la?</p>
+    </section>
+
+    <section>
+      <h2>Hipótese</h2>
+      <p>
+        Acreditamos que a facilidade de criar conteudos com IA faz com que muitas pessoas confiem nas informações sem confirmar sua veracidade,aumentando o risco de espalhar noticias falsas
+      </p>
+    </section>
+
+    <section class="dashboard">
+      <h2>Dashboard da pesquisa</h2>
+
+
+      <label for="filtro">Filtrar por pergunta:</label>
+      <select id="filtro">
+        <option value="0">voce ja compartilhou alguma noticia ou informação por confiar no conteudo gerado por IA sem verificar a fonte?</option>
+
+        <option value="2">Você confia nas decisões da IA?</option>
+      </select>
+
+      <div class="graficos">
+        <div class="grafico">
+          <h3>Quantidade de respostas</h3>
+          <canvas id="graficoBarras"></canvas>
+        </div>
+
+        <div class="grafico">
+          <h3>Distribuição das respostas</h3>
+          <canvas id="graficoRosca"></canvas>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>yarla</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
